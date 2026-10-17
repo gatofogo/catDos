@@ -1,0 +1,23 @@
+{
+    "version":"2.0.0",
+    "tasks":[
+        {
+            "label":"build" ,
+            "type":"shell",
+            "command":"g++",
+            "args":[
+                "scr/*.cpp",
+                "-Iinclude",
+                "-std=c++17",
+                "-Wall",
+                "-g",
+                "-o",
+                "CatDos.exe"
+            ],
+            "group":{
+                "kind":"build",
+                "isDefault":true
+            }
+        }
+    ]
+}
